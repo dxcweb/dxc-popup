@@ -1,6 +1,6 @@
 {
   "name": "dxc-popup",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "scripts": {
     "pub": "npm run build && npm publish",
     "start": "dumi dev",
@@ -31,8 +31,10 @@
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
-    "hammerjs": "^2.0.8",
-    "react": "^16.12.0 || ^17.0.0"
+    "hammerjs": "^2.0.8"
+  },
+  "peerDependencies": {
+    "react": "17.x"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
