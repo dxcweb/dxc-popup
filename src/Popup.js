@@ -112,12 +112,17 @@ class Popup extends React.PureComponent {
       </React.Fragment>
     );
   };
+  onClickWp = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+  };
   render() {
     const { children, className, style } = this.props;
     return (
       <React.Fragment>
         {this.renderMask()}
         <div
+          onClick={this.onClickWp}
           ref={(me) => (this.container = me)}
           css={{
             position: 'fixed',
